@@ -1,0 +1,156 @@
+.bg-container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(../all-images/body-images/tgimage.jfif);
+    background-size: 100%;
+    background-position: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-container .auth-container{
+    width: 600px;
+    min-height: 400px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bg-container .auth-container .logo-container{
+    height: 60px;
+    width: 100%;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg-container .auth-container .logo-container h1{
+    font-size: 50px;
+    color: var(--white-color);
+}
+
+.bg-container .auth-container .form-container{
+    width: 100%;
+    height: 100%;
+    background-color: var(--white-color);
+}
+
+.bg-container .auth-container .form-container  .form-wrapper{
+   padding: 45px;
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+}
+
+.bg-container .auth-container .form-container  .form-wrapper h2{
+   font-size: 26px;
+   font-family: sub-title-font;
+}
+.bg-container .auth-container .form-container  .form-wrapper .input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.bg-container .auth-container .form-container  .form-wrapper .input-container .input-group{
+     width: 100%;
+}
+
+
+
+.bg-container .auth-container .form-container .form-wrapper .input-container .input-group .text-field{
+     width: calc(100% - 40px);
+     height: 60px;
+    padding: 0px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    background: var(--input-bg-color);
+    font-family: body-font;
+    color: var(--input-text-color);
+    -webkit-text-fill-color: var(--input-text-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none !important;
+}
+.bg-container .auth-container .form-container .form-wrapper .btn-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.bg-container .auth-container .form-container .form-wrapper .btn-wrapper .btn{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    height: 50px;
+    padding: 0px 30px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-family: sub-title-font;
+    transition: all ease 0.2s;
+    -webkit-transition: all ease 0.2s;
+    -ms-transition: all ease 0.2s;
+    -o-transition: all ease 0.2s;
+    -moz-transition: all ease 0.2s;
+}
+
+
+.bg-container .auth-container .form-container .form-wrapper .btn-wrapper .btn:hover{
+    background-color: var(--hover-color);;
+}
+
+.bg-container .auth-container .form-container .form-wrapper .btn-wrapper p{
+    font-size: 14px;
+    color: var(--deep-gray-color);
+}
+
+.bg-container .auth-container .form-container .form-wrapper .social-icon-container{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bg-container .auth-container .form-container .form-wrapper .social-icon-container .icon-wrapper{
+    display: flex;
+    gap: 10px;
+}
+
+.bg-container .auth-container .form-container .form-wrapper .social-icon-container .icon-wrapper .icon{
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg-container .auth-container .form-container .form-wrapper .social-icon-container .icon-wrapper .icon i{
+    color: var(--white-color);
+}
+
+.bg-container .auth-container .form-container .form-wrapper .social-icon-container .icon-wrapper .icon.facebook{
+    background-color: #1877F2;
+}
+.bg-container .auth-container .form-container .form-wrapper .social-icon-container .icon-wrapper .icon.twitter{
+    background-color: var(--black-color);
+}
+.bg-container .auth-container .form-container .form-wrapper .social-icon-container .icon-wrapper .icon.google{
+    background-color: #BD081C;
+}
+.bg-container .auth-container .form-container .form-wrapper .social-icon-container .icon-wrapper .icon.linkedin{
+    background-color: #0A66C2;
+}
+
+.bg-container .auth-container .form-container .form-wrapper .social-icon-container p{
+    font-size: 14px;
+    color: var(--deep-gray-color);
+}
+
+.bg-container .auth-container .form-container .form-wrapper .social-icon-container span{
+    font-size: 14px;
+    color: #74D4FF;
+
+}
