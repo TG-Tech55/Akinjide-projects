@@ -1,0 +1,183 @@
+.landing-page-bg {
+    height: 100%;
+    width: 100%;
+    background: url(../all-images/body-images/landphoto.jpeg);
+    position: absolute;
+    background-size: 100%;
+    background-position: 100%;
+
+}
+
+.landing-page-bg .overlay-bg {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
+
+}
+
+.landing-page-bg .overlay-bg header {
+    width: 100%;
+    height: 80px;
+
+}
+
+.landing-page-bg .overlay-bg header .header-wrapper {
+    width: 90%;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.landing-page-bg .overlay-bg header .header-wrapper .logo-wrapper {
+    width: 200px;
+    height: auto;
+}
+
+.landing-page-bg .overlay-bg header .header-wrapper .logo-wrapper img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.landing-page-bg .overlay-bg header .header-wrapper nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.landing-page-bg .overlay-bg header .header-wrapper nav ul {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    gap: 10px;
+}
+
+
+.landing-page-bg .overlay-bg header .header-wrapper nav ul li {
+    list-style: none;
+    height: 70px;
+    padding: 0px 5px;
+    line-height: 70px;
+    font-family: sub-title-font;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: var(--white-color);
+
+}
+
+.landing-page-bg .overlay-bg header .header-wrapper .header-contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.landing-page-bg .overlay-bg header .header-wrapper .header-contact-container .contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--white-color);
+    font-family: sub-title-font;
+    font-size: 14px;
+}
+
+.landing-page-bg .overlay-bg header .header-wrapper .header-contact-container .btn {
+    height: 50px;
+    padding: 0px 20px;
+    border: var(--primary-color) 1px solid;
+    font-family: sub-title-font;
+    font-size: 20px;
+    background: transparent;
+
+
+}
+
+.landing-page-bg .overlay-bg header .header-wrapper .header-contact-container .btn i {
+    color: var(--white-color);
+
+}
+
+.landing-page-bg .overlay-bg .form-container {
+    width: 700px;
+    height: 400px;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.landing-page-bg .overlay-bg .form-container .inner-form {
+    width: 100%;
+
+}
+
+.landing-page-bg .overlay-bg .form-container .inner-form h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-color);
+    margin-bottom: 20px;
+    font-size: 46px;
+    
+
+}
+
+.landing-page-bg .overlay-bg .form-container .inner-form h5 {
+    display: flex;
+    justify-content: center;
+    font-size: sub-title-font;
+    margin-bottom: 10px;
+    color: var(--white-color);
+}
+
+.landing-page-bg .overlay-bg .form-container .inner-form h6 {
+    display: flex;
+    justify-content: center;
+    font-size: sub-title-font;
+    margin-bottom: 20px;
+    color: var(--white-color);
+}
+
+.landing-page-bg .overlay-bg .form-container .inner-form .button-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+}
+
+.landing-page-bg .overlay-bg .form-container .inner-form .button-wrapper .right-button{
+    background-color: var(--primary-color);
+}
+
+.landing-page-bg .overlay-bg .form-container .inner-form .button-wrapper .left-button{
+    border: var(--primary-color) 1px solid;
+}
+
+.landing-page-bg .overlay-bg .form-container .inner-form .button-wrapper .btn {
+    color: var(--white-color);
+    background: none;
+    height: 50px;
+    padding: 0px 30px;
+    border: none;
+    cursor: pointer;
+    font-family: sub-title-font;
+    transition: all ease 0.2s;
+    -webkit-transition: all ease 0.2s;
+    -ms-transition: all ease 0.2s;
+    -o-transition: all ease 0.2s;
+    -moz-transition: all ease 0.2s;
+}
+
+.landing-page-bg .overlay-bg .form-container .inner-form .button-wrapper .btn:hover {
+    background-color:grey;
+
+}
