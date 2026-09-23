@@ -1,0 +1,7 @@
+$kind: http-request
+url: localhost/Akinjide-projects/clincore.com/room/search-room.php
+method: POST
+body:
+  type: formdata
+  content: []
+order: 3841443854708126

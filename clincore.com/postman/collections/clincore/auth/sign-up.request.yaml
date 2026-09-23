@@ -1,0 +1,7 @@
+$kind: http-request
+url: localhost/Akinjide-projects/clincore.com/auth/sign-up.php
+method: POST
+body:
+  type: formdata
+  content: []
+order: 4481266754694380

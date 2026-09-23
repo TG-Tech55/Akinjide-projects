@@ -1,0 +1,7 @@
+$kind: http-request
+url: localhost/Akinjide-projects/clincore.com/room/fetch-all-room.php
+method: POST
+body:
+  type: formdata
+  content: []
+order: 684478620205597

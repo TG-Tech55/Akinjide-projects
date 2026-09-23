@@ -1,0 +1,12 @@
+$kind: http-request
+url: localhost/Akinjide-projects/clincore.com/department/fetch-each-department.php
+method: POST
+body:
+  type: formdata
+  content:
+    - type: text
+      key: departmentId
+      value: DEPARTMENT20260923025713
+      description: ""
+      disabled: false
+order: 3889323366224024

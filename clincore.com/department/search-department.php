@@ -13,7 +13,7 @@ if ($searchContent == '') {
 }
 
 
-$searchDepartmentQuery = mysqli_query($conn, "SELECT department_tab.* FROM department_tab WHERE (department_tab.name LIKE '%$searchContent%' OR department_tab.describtion LIKE '%$searchContent%')") or die(mysqli_error($conn));
+$searchDepartmentQuery = mysqli_query($conn, "SELECT department_tab.* FROM department_tab WHERE (department_tab.name LIKE '%$searchContent%' OR department_tab.id LIKE '%$searchContent%')") or die(mysqli_error($conn));
 
 if (mysqli_num_rows($searchDepartmentQuery) == 0) {
     $response = [

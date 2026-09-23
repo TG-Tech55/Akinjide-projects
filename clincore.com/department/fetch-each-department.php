@@ -37,12 +37,12 @@ if (mysqli_num_rows($checkDepartmentQuery) == 0) {
    ];
 }
 
-$createdepartmentQuery = mysqli_query($conn, "SELECT department_tab.*, department_tab.department_name, department_tab.describtion FROM doctor_tab WHERE department_tab.department_id = department_tab.department_id AND department_tab.department_name = '$Name'") or die(mysqli_error($conn));
+$createdepartmentQuery = mysqli_query($conn, "SELECT department_tab.*, department_tab.department_name, department_tab.describtion FROM department_tab WHERE department_tab.department_name = department_tab.department_name AND department_tab.department_id = '$departmentId'") or die(mysqli_error($conn));
 $departmentData = mysqli_fetch_assoc($createdepartmentQuery);
 
 $response = [
     'success' => true,
-    'message' => "DEPARTMENT CREATED SUCCESSFUL",
+    'message' => "DEPARTMENT FETCH SUCCESSFUL",
     'data' => [
         'departmentId' => $departmentData['department_id'],
         'Name' => $departmentData['department_name'],

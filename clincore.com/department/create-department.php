@@ -3,13 +3,15 @@
 <?php
 // DECLERATION OF VARIABLE
 
-$Name = trim($_POST['Name']);
+$name = trim($_POST['name']);
 $describtion = trim($_POST['describtion']);
+$statusId = trim($_POST['statusId']);
 
-if ($Name == '') {
+
+if ($name == '') {
     $response = [
         'success' => false,
-        'message' => "FULL NAME NAME IS REQUIRED, Kindly fill in the full name to continue"
+        'message' => "DEPARTMENT NAME IS REQUIRED, Kindly fill in the department name to continue"
     ];
     goto end;
 }
@@ -22,8 +24,16 @@ if ($describtion == '') {
     goto end;
 }
 
+if ($statusId == '') {
+    $response = [
+        'success' => false,
+        'message' => "STATUS ID IS REQUIRED, Kindly fill in the describtion to continue"
+    ];
+    goto end;
+}
 
-$Namecheck = mysqli_query($conn, "SELECT * FROM department_tab WHERE department_name = '$Name'") or die(mysqli_error($conn));
+
+$Namecheck = mysqli_query($conn, "SELECT * FROM department_tab WHERE department_name = '$name'") or die(mysqli_error($conn));
 if (mysqli_num_rows($Namecheck) > 0) {
     $response = [
         "success" => false,
@@ -35,11 +45,11 @@ if (mysqli_num_rows($Namecheck) > 0) {
 $departmentId = 'DEPARTMENT' . date("Ymdhis");
 
 
-mysqli_query($conn, "INSERT INTO `doctor_tab`
-    ( `department_id`, `department_name`, `describtion`, `created_at`, `updated_at`) VALUES
-    ('$departmentId', '$Name','$describtion', NOW(), NOW())") or die(mysqli_error($conn));
+mysqli_query($conn, "INSERT INTO `department_tab`
+    ( `department_id`, `department_name`, `describtion`, `status_id`, `created_at`, `updated_at`) VALUES
+    ('$departmentId', '$name','$describtion', '$statusId', NOW(), NOW())") or die(mysqli_error($conn));
 
-$createDepartmentQuery = mysqli_query($conn, "SELECT department_tab.*, department_tab.department_name, department_tab.describtion FROM doctor_tab WHERE department_tab.department_id = department_tab.department_id AND department_tab.department_name = '$Name'") or die(mysqli_error($conn));
+$createDepartmentQuery = mysqli_query($conn, "SELECT department_tab.*, status_tab.status_id FROM department_tab, status_tab WHERE department_tab.status_id = status_tab.status_id AND department_tab.department_name = '$name'") or die(mysqli_error($conn));
 $departmentData = mysqli_fetch_assoc($createDepartmentQuery);
 
 $response = [
@@ -47,8 +57,10 @@ $response = [
     'message' => "DEPARTMENT CREATED SUCCESSFUL",
     'data' => [
         'departmentId' => $departmentData['department_id'],
-        'Name' => $departmentData['department_name'],
+        'name' => $departmentData['department_name'],
         'describtion' => $departmentData['describtion'],
+        'statusId' => $departmentData['status_id'],
+        'statusName' => $departmentData['status_name'],
         'createdAt' => $departmentData['created_at'],
         'updatedAt' => $departmentData['updated_at']
     ]

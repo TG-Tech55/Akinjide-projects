@@ -1,0 +1,7 @@
+$kind: http-request
+url: localhost/Akinjide-projects/clincore.com/department/fetch-all-department.php
+method: POST
+body:
+  type: formdata
+  content: []
+order: 3330039457155900

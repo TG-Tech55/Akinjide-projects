@@ -1,0 +1,7 @@
+$kind: http-request
+url: localhost/Akinjide-projects/clincore.com/department/delete-department.php
+method: POST
+body:
+  type: formdata
+  content: []
+order: 4273115436745569

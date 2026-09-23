@@ -1,0 +1,7 @@
+$kind: http-request
+url: localhost/Akinjide-projects/clincore.com/room/delete-room.php
+method: POST
+body:
+  type: formdata
+  content: []
+order: 3013956451879746
