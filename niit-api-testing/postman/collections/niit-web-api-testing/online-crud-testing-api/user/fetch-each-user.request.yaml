@@ -1,0 +1,12 @@
+$kind: http-request
+url: localhost/niit-api-testing/crud-testing/user/fetch-each-user.php
+method: POST
+body:
+  type: formdata
+  content:
+    - type: text
+      key: userId
+      value: USER260907050811
+      description: ""
+      disabled: false
+order: 3000

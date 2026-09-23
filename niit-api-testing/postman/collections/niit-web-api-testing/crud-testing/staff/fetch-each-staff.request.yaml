@@ -1,0 +1,4 @@
+$kind: http-request
+url: localhost/niit-api-testing/crud-testing/staff/fetch-each-staff.php
+method: POST
+order: 3933062286486407

@@ -1,0 +1,7 @@
+$kind: http-request
+url: localhost/niit-api-testing/crud-testing/staff/update-staff.php
+method: POST
+body:
+  type: formdata
+  content: []
+order: 2973016243492305

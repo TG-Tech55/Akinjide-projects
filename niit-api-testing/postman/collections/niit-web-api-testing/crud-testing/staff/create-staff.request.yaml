@@ -1,0 +1,32 @@
+$kind: http-request
+url: localhost/niit-api-testing/crud-testing/staff/create-staff.php
+method: POST
+body:
+  type: formdata
+  content:
+    - type: text
+      key: firstName
+      value: John
+      description: ""
+      disabled: false
+    - type: text
+      key: lastName
+      value: akinbola
+      description: ""
+      disabled: false
+    - type: text
+      key: emailAddress
+      value: akin@gmail.com
+      description: ""
+      disabled: false
+    - type: text
+      key: phone
+      value: "09123234545"
+      description: ""
+      disabled: false
+    - type: text
+      key: roleId
+      value: "1"
+      description: ""
+      disabled: false
+order: 1789018349366

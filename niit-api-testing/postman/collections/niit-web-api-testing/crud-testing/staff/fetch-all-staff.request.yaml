@@ -1,0 +1,7 @@
+$kind: http-request
+url: localhost/niit-api-testing/crud-testing/staff/fetch-all-staff.php
+method: POST
+body:
+  type: formdata
+  content: []
+order: 3226634477911913

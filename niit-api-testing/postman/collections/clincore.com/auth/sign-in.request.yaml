@@ -1,0 +1,17 @@
+$kind: http-request
+url: localhost/niit-api-testing/auth/sign-in.php
+method: POST
+body:
+  type: formdata
+  content:
+    - type: text
+      key: emailAddress
+      value: akinbode@gmail.com
+      description: ""
+      disabled: false
+    - type: text
+      key: password
+      value: bcjxjjcsx
+      description: ""
+      disabled: false
+order: 2868358124405325

@@ -1,0 +1,7 @@
+$kind: http-request
+url: localhost/niit-api-testing/crud-testing/staff/delete-staff.php
+method: POST
+body:
+  type: formdata
+  content: []
+order: 4379923202190572

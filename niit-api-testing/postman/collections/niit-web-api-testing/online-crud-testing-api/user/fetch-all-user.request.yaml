@@ -1,0 +1,7 @@
+$kind: http-request
+url: localhost/niit-api-testing/crud-testing/user/fetch-all-user.php
+method: POST
+body:
+  type: formdata
+  content: []
+order: 2000

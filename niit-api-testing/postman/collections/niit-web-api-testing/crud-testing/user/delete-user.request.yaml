@@ -1,0 +1,12 @@
+$kind: http-request
+url: localhost/niit-api-testing/crud-testing/delete-user.php
+method: POST
+body:
+  type: formdata
+  content:
+    - type: text
+      key: userId
+      value: ""
+      description: ""
+      disabled: false
+order: 1000

@@ -1,0 +1,27 @@
+$kind: http-request
+url: localhost/niit-api-testing/crud-testing/user/create-user.php
+method: POST
+body:
+  type: formdata
+  content:
+    - type: text
+      key: firstName
+      value: Afoo
+      description: ""
+      disabled: false
+    - type: text
+      key: lastName
+      value: afoo
+      description: ""
+      disabled: false
+    - type: text
+      key: emailAddress
+      value: walexcd@gameil.com
+      description: ""
+      disabled: false
+    - type: text
+      key: phone
+      value: "08132328002"
+      description: ""
+      disabled: false
+order: 5000

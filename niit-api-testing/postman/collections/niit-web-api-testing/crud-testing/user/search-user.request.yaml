@@ -1,0 +1,12 @@
+$kind: http-request
+url: localhost/niit-api-testing/crud-testing/user/search-user.php
+method: POST
+body:
+  type: formdata
+  content:
+    - type: text
+      key: lastName
+      value: akinpelu
+      description: ""
+      disabled: false
+order: 3208763002586525
