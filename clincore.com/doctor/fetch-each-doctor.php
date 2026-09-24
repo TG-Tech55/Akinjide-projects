@@ -42,7 +42,7 @@ $doctorData = mysqli_fetch_assoc($fetchEachDoctorQuery);
 
 $response = [
     'success' => true,
-    'message' => "LOGIN SUCCESSFUL",
+    'message' => "DOCTOR FETCH SUCCESSFUL",
     'data' => [
         'doctorId' => $doctorData['doctor_id'],
         'firstName' => $doctorData['first_name'],

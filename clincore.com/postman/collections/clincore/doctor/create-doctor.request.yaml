@@ -3,5 +3,40 @@ url: localhost/Akinjide-projects/clincore.com/doctor/create-doctor.php
 method: POST
 body:
   type: formdata
-  content: []
+  content:
+    - type: text
+      key: name
+      value: Dr. Olivia Martinez
+      description: ""
+      disabled: false
+    - type: text
+      key: emailAddress
+      value: olivia@gmail.com
+      description: ""
+      disabled: false
+    - type: text
+      key: phone
+      value: "090222222222"
+      description: ""
+      disabled: false
+    - type: text
+      key: password
+      value: olivia
+      description: ""
+      disabled: false
+    - type: text
+      key: specialist
+      value: Heart Specialist
+      description: ""
+      disabled: false
+    - type: text
+      key: departmentId
+      value: DEPARTMENT20260923025853
+      description: ""
+      disabled: false
+    - type: text
+      key: statusId
+      value: A
+      description: ""
+      disabled: false
 order: 1790161735441

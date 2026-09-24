@@ -6,17 +6,17 @@ body:
   content:
     - type: text
       key: name
-      value: Dermatology
+      value: Obstetrics and Gynecology
       description: ""
       disabled: false
     - type: text
       key: describtion
-      value: Focuses on the treatment of skin conditions
+      value: Provides care for women health, including pregnancy, childbirth, and reproductive
       description: ""
       disabled: false
     - type: text
       key: statusId
-      value: Active
+      value: ACTIVE
       description: ""
       disabled: false
 order: 1790161983385

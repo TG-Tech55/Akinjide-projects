@@ -1,0 +1,7 @@
+$kind: http-request
+url: localhost/Akinjide-projects/clincore.com/patient/create-patient.php
+method: POST
+body:
+  type: formdata
+  content: []
+order: 1790250604430

@@ -3,5 +3,10 @@ url: localhost/Akinjide-projects/clincore.com/department/search-department.php
 method: POST
 body:
   type: formdata
-  content: []
+  content:
+    - type: text
+      key: name
+      value: General Medicine
+      description: ""
+      disabled: false
 order: 4336267460415526

@@ -55,15 +55,7 @@ $departmentData = mysqli_fetch_assoc($createDepartmentQuery);
 $response = [
     'success' => true,
     'message' => "DEPARTMENT CREATED SUCCESSFUL",
-    'data' => [
-        'departmentId' => $departmentData['department_id'],
-        'name' => $departmentData['department_name'],
-        'describtion' => $departmentData['describtion'],
-        'statusId' => $departmentData['status_id'],
-        'statusName' => $departmentData['status_name'],
-        'createdAt' => $departmentData['created_at'],
-        'updatedAt' => $departmentData['updated_at']
-    ]
+
 ];
 
 end:

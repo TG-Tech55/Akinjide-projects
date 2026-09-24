@@ -1,0 +1,28 @@
+<?php require_once __DIR__ . '/../config/connection.php'; ?>
+
+<?php
+
+$roleId = trim($_POST['role_Id']);
+
+$checkRoleQuery = mysqli_query($conn, "SELECT * FROM role_tab WHERE role_id = '$roleId'") or die(mysqli_error($conn));
+if (mysqli_num_rows($checkRoleQuery) == 0) {
+    $response = [
+        'success' => false,
+        'message' => 'THE ROLE NOT FOUND'
+    ];
+   Goto end;  
+}
+
+ mysqli_query($conn, "DELETE FROM role_tab WHERE role_id = '$roleId'") or die(mysqli_error($conn));
+
+    $response = [
+        'success' => true,
+        'message' => 'ROLE INFO DELETED SUCCESSFULLY'
+    ];
+
+ 
+
+end:
+echo json_encode($response);
+
+?>

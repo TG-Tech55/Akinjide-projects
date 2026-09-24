@@ -1,0 +1,7 @@
+$kind: http-request
+url: localhost/Akinjide-projects/clincore.com/role/fetch-all-role.php
+method: POST
+body:
+  type: formdata
+  content: []
+order: 3673333810967515

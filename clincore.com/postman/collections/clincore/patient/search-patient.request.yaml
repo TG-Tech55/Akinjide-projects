@@ -1,0 +1,7 @@
+$kind: http-request
+url: localhost/Akinjide-projects/clincore.com/patient/search-patient.php
+method: POST
+body:
+  type: formdata
+  content: []
+order: 4440427250892660

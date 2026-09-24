@@ -3,5 +3,20 @@ url: localhost/Akinjide-projects/clincore.com/room/create-room.php
 method: POST
 body:
   type: formdata
-  content: []
+  content:
+    - type: text
+      key: name
+      value: Block D
+      description: ""
+      disabled: false
+    - type: text
+      key: capacity
+      value: "50"
+      description: ""
+      disabled: false
+    - type: text
+      key: statusId
+      value: ACTIVE
+      description: ""
+      disabled: false
 order: 1790162254979

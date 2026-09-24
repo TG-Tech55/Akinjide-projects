@@ -1,0 +1,7 @@
+$kind: http-request
+url: localhost/Akinjide-projects/clincore.com/patient/delete-patient.php
+method: POST
+body:
+  type: formdata
+  content: []
+order: 4402445638703326

@@ -13,21 +13,21 @@ if ($searchContent == '') {
 }
 
 
-$searchRoomQuery = mysqli_query($conn, "SELECT room_tab.*, status_tab.status_name FROM room_tab, status_tab WHERE room_tab.status_id = status_tab.status_id AND (room_tab.room_name LIKE '%$searchContent%' OR room_tab.room_id LIKE '%$searchContent%')") or die(mysqli_error($conn));
+$searchRoleQuery = mysqli_query($conn, "SELECT role_tab *  FROM role_tab WHERE (role_tab.role_name LIKE '%$searchContent%' OR role_tab.role_id LIKE '%$searchContent%')") or die(mysqli_error($conn));
 
-if (mysqli_num_rows($searchRoomQuery) == 0) {
+if (mysqli_num_rows($searchRoleQuery) == 0) {
     $response = [
         'success' => false,
-        'message' => "NO ROOM FOUND"
+        'message' => "NO ROLE FOUND"
     ];
     goto end;
 }
 
-$fetchData = mysqli_fetch_all($searchRoomQuery, MYSQLI_ASSOC);
+$fetchData = mysqli_fetch_all($searchRoleQuery, MYSQLI_ASSOC);
 
 $response = [
     'success' => true,
-    'message' => "ROOM SEARCH SUCCESFULLY",
+    'message' => "ROLE SEARCH SUCCESFULLY",
     'data' => $fetchData
 ];
 
